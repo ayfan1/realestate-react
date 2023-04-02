@@ -2,11 +2,14 @@
   "name": "realestate_react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ayfan1.github.io/realestate-react/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.5.1",
@@ -16,6 +19,7 @@
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
     "framer-motion": "^10.2.3",
+    "gh-pages": "^5.0.0",
     "millify": "^5.0.1",
     "next": "13.2.3",
     "nprogress": "^0.2.0",
